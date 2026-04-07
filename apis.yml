@@ -6,11 +6,11 @@ url: https://www.argusinvestor.com
 created: '2024-01-15'
 modified: '2024-01-15'
 tags:
-  - financial data
-  - stock research
-  - investment ratings
-  - equity analysis
-  - financial services
+  - Equity Analysis
+  - Financial Data
+  - Financial Services
+  - Investment Ratings
+  - Stock Research
 apis:
   - name: Argus Research API
     description: >-
@@ -19,10 +19,10 @@ apis:
     humanURL: https://www.argusinvestor.com/research
     baseURL: https://api.argusinvestor.com/v1
     tags:
-      - research
-      - ratings
-      - stocks
-      - analysis
+      - Analysis
+      - Ratings
+      - Research
+      - Stocks
     properties:
       - type: Documentation
         url: https://developer.argusinvestor.com/docs
@@ -46,9 +46,9 @@ apis:
       Real-time access to Argus stock ratings and recommendations.
     baseURL: https://api.argusinvestor.com/v1/ratings
     tags:
-      - ratings
-      - recommendations
-      - buy-sell-hold
+      - Buy-Sell-Hold
+      - Ratings
+      - Recommendations
     properties:
       - type: Documentation
         url: https://developer.argusinvestor.com/docs/ratings
@@ -59,9 +59,9 @@ apis:
       Access fundamental company data, financials, and metrics.
     baseURL: https://api.argusinvestor.com/v1/companies
     tags:
-      - fundamentals
-      - financials
-      - company data
+      - Company Data
+      - Financials
+      - Fundamentals
     properties:
       - type: Documentation
         url: https://developer.argusinvestor.com/docs/companies
