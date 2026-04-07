@@ -1,68 +1,72 @@
 name: Argus Investor
-description: APIs for accessing Argus Investor research, ratings, and financial data
+description: >-
+  APIs for accessing Argus Investor research, ratings, and financial data.
 image: https://www.argusinvestor.com/logo.png
 url: https://www.argusinvestor.com
 created: '2024-01-15'
 modified: '2024-01-15'
 tags:
-- financial data
-- stock research
-- investment ratings
-- equity analysis
-- financial services
+  - financial data
+  - stock research
+  - investment ratings
+  - equity analysis
+  - financial services
 apis:
-- name: Argus Research API
-  description: Access to equity research reports, stock ratings, and analyst recommendations
-  image: https://www.argusinvestor.com/api-logo.png
-  humanURL: https://www.argusinvestor.com/research
-  baseURL: https://api.argusinvestor.com/v1
-  tags:
-  - research
-  - ratings
-  - stocks
-  - analysis
-  properties:
-  - type: Documentation
-    url: https://developer.argusinvestor.com/docs
-  - type: OpenAPI
-    url: https://api.argusinvestor.com/openapi.json
-  - type: Authentication
-    url: https://developer.argusinvestor.com/authentication
-  - type: Pricing
-    url: https://www.argusinvestor.com/api-pricing
-  - type: Terms of Service
-    url: https://www.argusinvestor.com/terms
-  - type: Support
-    url: https://support.argusinvestor.com
-  contact:
-  - type: Email
-    url: api-support@argusinvestor.com
-  - type: Twitter
-    url: https://twitter.com/argusinvestor
-- name: Stock Ratings API
-  description: Real-time access to Argus stock ratings and recommendations
-  baseURL: https://api.argusinvestor.com/v1/ratings
-  tags:
-  - ratings
-  - recommendations
-  - buy-sell-hold
-  properties:
-  - type: Documentation
-    url: https://developer.argusinvestor.com/docs/ratings
-  - type: Rate Limits
-    url: https://developer.argusinvestor.com/rate-limits
-- name: Company Data API
-  description: Access fundamental company data, financials, and metrics
-  baseURL: https://api.argusinvestor.com/v1/companies
-  tags:
-  - fundamentals
-  - financials
-  - company data
-  properties:
-  - type: Documentation
-    url: https://developer.argusinvestor.com/docs/companies
+  - name: Argus Research API
+    description: >-
+      Access to equity research reports, stock ratings, and analyst recommendations.
+    image: https://www.argusinvestor.com/api-logo.png
+    humanURL: https://www.argusinvestor.com/research
+    baseURL: https://api.argusinvestor.com/v1
+    tags:
+      - research
+      - ratings
+      - stocks
+      - analysis
+    properties:
+      - type: Documentation
+        url: https://developer.argusinvestor.com/docs
+      - type: OpenAPI
+        url: https://api.argusinvestor.com/openapi.json
+      - type: Authentication
+        url: https://developer.argusinvestor.com/authentication
+      - type: Pricing
+        url: https://www.argusinvestor.com/api-pricing
+      - type: Terms of Service
+        url: https://www.argusinvestor.com/terms
+      - type: Support
+        url: https://support.argusinvestor.com
+    contact:
+      - type: Email
+        url: api-support@argusinvestor.com
+      - type: Twitter
+        url: https://twitter.com/argusinvestor
+  - name: Stock Ratings API
+    description: >-
+      Real-time access to Argus stock ratings and recommendations.
+    baseURL: https://api.argusinvestor.com/v1/ratings
+    tags:
+      - ratings
+      - recommendations
+      - buy-sell-hold
+    properties:
+      - type: Documentation
+        url: https://developer.argusinvestor.com/docs/ratings
+      - type: Rate Limits
+        url: https://developer.argusinvestor.com/rate-limits
+  - name: Company Data API
+    description: >-
+      Access fundamental company data, financials, and metrics.
+    baseURL: https://api.argusinvestor.com/v1/companies
+    tags:
+      - fundamentals
+      - financials
+      - company data
+    properties:
+      - type: Documentation
+        url: https://developer.argusinvestor.com/docs/companies
 maintainers:
-- name: Argus Research Company
-  email: info@argusinvestor.com
-  url: https://www.argusinvestor.com
+  - name: Argus Research Company
+    email: info@argusinvestor.com
+    url: https://www.argusinvestor.com
 include: []
