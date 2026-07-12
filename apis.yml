@@ -44,6 +44,8 @@ apis:
       - type: Pricing
         url: https://www.argusresearch.com/
 common:
+  - type: DomainSecurity
+    url: security/argus-investor-domain-security.yml
   - type: Website
     url: https://www.argusresearch.com/
   - type: Documentation
@@ -96,6 +98,8 @@ common:
         description: Argus analyst commentary and ratings cited in Reuters financial news coverage.
       - name: Yahoo Finance
         description: Argus ratings featured in Yahoo Finance analyst rating aggregations.
+  - url: https://www.argusresearch.com/
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
