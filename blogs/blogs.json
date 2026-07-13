@@ -1,0 +1,14 @@
+{
+  "repo": "argus-investor",
+  "feeds": [
+    {
+      "source": "https://www.argusresearch.com/",
+      "feed_url": "https://www.argusresearch.com/",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "fetched": "2026-07-11T11:50:51Z",
+  "post_count": 6
+}
