@@ -25,6 +25,12 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/argus-inve
 tags:
   - Equity Analysis
   - Financial Data
+  - Financial-Services
+  - Investment Ratings
+  - Stock Research
+tags_raw:
+  - Equity Analysis
+  - Financial Data
   - Financial Services
   - Investment Ratings
   - Stock Research
