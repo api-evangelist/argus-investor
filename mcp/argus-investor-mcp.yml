@@ -1,0 +1,30 @@
+generated: '2026-09-14'
+method: searched
+source: >-
+  www.argusresearch.com site crawl, web search for an Argus Research MCP server, and the
+  /.well-known/ probe recorded in well-known/argus-investor-well-known.yml (2026-09-14)
+provider: Argus Investor
+providerId: argus-investor
+description: >-
+  MCP search record for Argus Research Company. No hosted (remote) MCP endpoint and no
+  local-stdio MCP package is published by the provider, and no OpenAPI exists in this repo
+  from which a candidate tool list could be derived. Nothing is asserted as an agent surface.
+deployment:
+  mode: none
+  endpoint: null
+  install: null
+  package: null
+  auth: unknown
+  verified: searched
+tools: []
+tool_count: 0
+note: >-
+  mode:none here means nobody ships a server AND no candidate could be derived. Argus
+  Research publishes no machine-readable contract: /openapi.json, /openapi.yaml,
+  /swagger.json, /v1/openapi.json, /api-docs and /redoc all return 404 on
+  www.argusresearch.com, and there is no /graphql surface. Deriving a tool list would
+  require inventing operations, which this pipeline does not do. No MCPServer pointer is
+  wired in apis.yml.
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

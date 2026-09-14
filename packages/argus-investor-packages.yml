@@ -1,0 +1,56 @@
+generated: '2026-09-14'
+method: searched
+source: >-
+  npm registry search, pypi.org, github.com/ArgusResearch, and the argusresearch.com
+  Our Services / Reports & Investor Tools pages (2026-09-14)
+provider: Argus Investor
+providerId: argus-investor
+description: >-
+  Client-library search record for Argus Research Company. No first-party SDK, client library
+  or CDN-distributed component was found in any public registry or on the provider's own site.
+  This is a measured zero, not an unchecked field.
+package_count: 0
+packages: []
+registries_searched:
+  - registry: npm
+    query: registry.npmjs.org search for "argusresearch" and "argus research ratings"
+    result: none
+    note: >-
+      Zero results for "argusresearch". The "argus"-named packages that surface
+      (@ory/argus, @vforsh/argus, solidity-argus) belong to unrelated projects.
+  - registry: pypi
+    query: pypi.org/pypi/argusresearch/json
+    result: none
+    status: 404
+    note: >-
+      PyPI "argus-api" exists but is mnemonic's Argus security platform client, not
+      Argus Research Company. Not recorded as first-party.
+  - registry: rubygems
+    result: none
+  - registry: crates.io
+    result: none
+  - registry: nuget
+    result: none
+  - registry: maven-central
+    result: none
+  - registry: pkg.go.dev
+    result: none
+  - registry: packagist
+    result: none
+  - registry: cdn
+    result: none
+    note: >-
+      No script-tag, unpkg or jsDelivr distribution is referenced anywhere on
+      www.argusresearch.com. The site's own JavaScript is DotNetNuke skin assets.
+source_code:
+  github_org: https://github.com/ArgusResearch
+  github_org_status: 200
+  github_org_verdict: unattributable
+  github_org_note: >-
+    The GitHub org login "ArgusResearch" exists (created 2024-11-04) but publishes 0 public
+    repositories and carries no name, description, blog URL, location or any other field
+    tying it to Argus Research Company of New York. Ownership cannot be established, so no
+    GitHubOrganization pointer is emitted for it.
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

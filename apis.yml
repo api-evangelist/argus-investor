@@ -48,17 +48,25 @@ tags_raw:
 url: >-
   https://raw.githubusercontent.com/api-evangelist/argus-investor/refs/heads/main/apis.yml
 created: '2024-01-15'
-modified: '2026-04-19'
+modified: '2026-09-14'
 specificationVersion: '0.23'
 apis:
   - aid: argus-investor:argus-research-api
-    name: Argus Research API
+    name: Argus Research Coverage and Ratings
     description: >-
-      The Argus Research API provides programmatic access to equity research reports,
-      stock ratings, analyst recommendations, earnings estimates, target prices, and
-      sector analysis. Used by institutional clients and financial platforms to integrate
-      Argus Research data into investment workflows.
-    humanURL: https://www.argusresearch.com/
+      Argus Research Company's coverage and ratings surface: analyst BUY/HOLD/SELL
+      recommendations and target prices on 500+ US equities across 60+ industries, A6
+      quantitative ratings on 1,100+ companies, a strategy-team ranking of 2,200+ global
+      companies, earnings estimates, equity and ETF model portfolios, ownership analytics
+      from Vickers Stock Research, and economic commentary. IMPORTANT, measured 2026-09-14:
+      Argus publishes NO public API for this surface. It is delivered as reports through a
+      subscriber login, through licensed distribution agreements, and through third-party
+      platforms (Bloomberg, Fidelity, Schwab, Interactive Brokers) whose own APIs, not
+      Argus's, are what an integrator calls. An earlier version of this record described a
+      programmatic "Argus Research API"; no such contract, endpoint, base URL or developer
+      documentation could be found on any Argus host, and that claim was removed.
+    humanURL: https://www.argusresearch.com/AboutUs/OurServices/ReportsRatings.aspx
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/argus-investor.png
     tags:
       - Equity Analysis
       - Financial Data
@@ -66,23 +74,23 @@ apis:
       - Research
       - Stock Ratings
     properties:
-      - type: Documentation
-        url: https://www.argusresearch.com/
-      - type: Authentication
-        url: https://www.argusresearch.com/
-      - type: Pricing
-        url: https://www.argusresearch.com/
+      - type: Website
+        url: https://www.argusresearch.com/AboutUs/OurServices.aspx
 common:
   - type: DomainSecurity
     url: security/argus-investor-domain-security.yml
   - type: Website
     url: https://www.argusresearch.com/
-  - type: Documentation
-    url: https://www.argusresearch.com/
-  - type: Portal
-    url: https://www.argusresearch.com/
   - type: Support
-    url: https://www.argusresearch.com/
+    url: https://www.argusresearch.com/ContactUs.aspx
+  - type: Login
+    url: https://www.argusresearch.com/Login/tabid/202/Default.aspx
+  - type: TermsOfService
+    url: https://www.argusresearch.com/terms.aspx
+  - type: PrivacyPolicy
+    url: https://www.argusresearch.com/privacy.aspx
+  - type: LLMsTxt
+    url: llms/argus-investor-llms.txt
   - type: Features
     data:
       - name: Fundamental Equity Research
@@ -132,3 +140,30 @@ common:
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-enrichment:
+  date: '2026-09-14'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    argusresearch.com is a DotNetNuke marketing site with a subscriber Login and no developer
+    section anywhere in its navigation: /openapi.json, /llms.txt, /robots.txt and all nine
+    named /.well-known/ paths return a branded 404, api./developer./data./docs. are DNS
+    wildcards serving the same marketing home page, and the fourteen Our Services pages
+    describe report, platform and licensed-distribution products (Bloomberg, Fidelity, Schwab,
+    Interactive Brokers) without naming an API, SDK, data feed or contract of any kind.
+  evidence:
+    - url: https://www.argusresearch.com/openapi.json
+      status: 404
+    - url: https://www.argusresearch.com/llms.txt
+      status: 404
+    - url: https://www.argusresearch.com/.well-known/agent-card.json
+      status: 404
+    - url: https://www.argusresearch.com/AboutUs/OurServices.aspx
+      status: 200
+    - url: https://api.argusresearch.com/
+      status: 200
+  checked: '2026-09-14'

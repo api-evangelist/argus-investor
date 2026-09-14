@@ -1,0 +1,119 @@
+generated: '2026-09-14'
+method: probed
+source: live HTTPS probes of every host this record knows (2026-09-14)
+provider: Argus Investor
+providerId: argus-investor
+description: >-
+  Probe record for the /.well-known/ discovery surface across every host the Argus Research
+  record knows. Every named path returned 404 on every host. No pointer of type WellKnown or
+  SecurityTxt is emitted, because nothing was served -- this file records a measured absence.
+note: >-
+  Host set notes. (1) argusresearch.com 301-redirects every path to www.argusresearch.com, so
+  www carries the real answers. (2) api./developer./data./docs./feeds..argusresearch.com all
+  resolve to the same A record (107.22.237.154) and serve the identical DotNetNuke marketing
+  home page -- they are a DNS wildcard, not distinct API hosts, and were not probed separately.
+  (3) resources.argusresearch.com is an S3 website bucket (HTTP only, no HTTPS listener) serving
+  research report PDFs. (4) No API baseURL and no OpenAPI servers[] host exist for this record,
+  so there is no further host to probe.
+hosts:
+  - host: www.argusresearch.com
+    note: primary marketing site, DotNetNuke; serves a 1,245-byte branded 404 page for unknown paths
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+      - path: /.well-known/aauth-resource.json
+        status: 404
+        file: null
+  - host: argusresearch.com
+    note: apex; 301 to www.argusresearch.com on every path probed
+    documents:
+      - path: /.well-known/security.txt
+        status: 301
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 301
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 301
+        file: null
+      - path: /.well-known/oauth-protected-resource
+        status: 301
+        file: null
+      - path: /.well-known/api-catalog
+        status: 301
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 301
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 301
+        file: null
+      - path: /.well-known/agent.json
+        status: 301
+        file: null
+      - path: /.well-known/aauth-resource.json
+        status: 301
+        file: null
+  - host: resources.argusresearch.com
+    note: S3 website bucket holding report PDFs; probed over http:// because no HTTPS listener answers
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+      - path: /.well-known/aauth-resource.json
+        status: 404
+        file: null
+summary:
+  hosts_probed: 3
+  paths_probed_per_host: 9
+  documents_served: 0
+  security_txt: false
+  api_catalog: false
+  agent_card: false
+  oauth_metadata: false
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
