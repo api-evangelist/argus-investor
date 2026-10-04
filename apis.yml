@@ -36,7 +36,7 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/argus-inve
 tags:
   - Equity Analysis
   - Financial Data
-  - Financial-Services
+  - Financial Services
   - Investment Ratings
   - Stock Research
 tags_raw:
@@ -45,6 +45,7 @@ tags_raw:
   - Financial Services
   - Investment Ratings
   - Stock Research
+  - Financial-Services
 url: >-
   https://raw.githubusercontent.com/api-evangelist/argus-investor/refs/heads/main/apis.yml
 created: '2024-01-15'
@@ -52,6 +53,7 @@ modified: '2026-09-14'
 specificationVersion: '0.23'
 apis:
   - aid: argus-investor:argus-research-api
+    x-published: false
     name: Argus Research Coverage and Ratings
     description: >-
       Argus Research Company's coverage and ratings surface: analyst BUY/HOLD/SELL
