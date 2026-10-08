@@ -79,6 +79,12 @@ apis:
       - type: Website
         url: https://www.argusresearch.com/AboutUs/OurServices.aspx
 common:
+  - type: Plans
+    url: plans/argus-investor-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/argus-investor-rate-limits.yml
+  - type: FinOps
+    url: finops/argus-investor-finops.yml
   - type: DomainSecurity
     url: security/argus-investor-domain-security.yml
   - type: Website
