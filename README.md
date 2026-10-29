@@ -1,4 +1,4 @@
-# Argus Investor (argus-investor)
+# Argus Investor
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,77 +64,105 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Argus Research Company is an independent equity research firm founded in 1934, providing institutional-quality investment research, stock ratings, and analyst recommendations for 500+ publicly traded companies. The firm publishes fundamental research, earnings estimates, target prices, and Buy/Hold/Sell ratings across all major sectors. Research is distributed to institutional clients and through Bloomberg, Fidelity, Schwab, and Interactive Brokers.
+Argus Research Company is an independent equity research firm founded in 1934, providing institutional-quality investment research, stock ratings, and analyst recommendations for 500+ publicly traded companies. The firm publishes fundamental research, earnings estimates, target prices, and Buy/Hold/Sell ratings across all major sectors including healthcare, technology, financial services, and industrials. Research is distributed to institutional clients and through financial data platforms including Bloomberg, Fidelity, Schwab, and Interactive Brokers.
 
-**URL:** [https://www.argusresearch.com/](https://www.argusresearch.com/)
+**Areas:** Equity Analysis · Financial Data · Financial Services · Investment Ratings · Stock Research
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## Argus Investor on APIs.io
 
-## Tags:
+Everything profiled for Argus Investor is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/argus-investor/](https://apis.io/providers/argus-investor/)** — or go straight to one of the APIs or properties below.
 
- - Equity Analysis, Financial Data, Financial Services, Investment Ratings, Stock Research
+### APIs (1)
 
-## Timestamps
+- [Argus Research Coverage and Ratings](https://apis.io/apis/argus-investor/argus-research-api/) — Argus Research Company's coverage and ratings surface: analyst BUY/HOLD/SELL recommendations and target prices on 500+ US equities across 60+ industries, A6…
 
-- **Created:** 2024-01-15
-- **Modified:** 2026-04-19
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### Argus Research API
-The Argus Research API provides programmatic access to equity research reports, stock ratings, analyst recommendations, earnings estimates, target prices, and sector analysis.
+#### Security (1)
 
-**Human URL:** [https://www.argusresearch.com/](https://www.argusresearch.com/)
+Authentication, trust centre, and vulnerability disclosure.
 
-#### Tags:
+- [Argus Investor Domain Security](https://apis.io/security/argus-investor/argus-investor-domain-security/)
 
- - Equity Analysis, Financial Data, Investment Ratings, Research, Stock Ratings
+#### Plans and pricing (1)
 
-#### Properties
+Published plans, tiers and prices.
 
-- [Documentation](https://www.argusresearch.com/)
+- [Argus Investor Plans Pricing](https://apis.io/plans/argus-investor/argus-investor-plans-pricing/)
 
-## Common Properties
+#### Rate limits (1)
+
+Published request limits.
+
+- [Argus Investor Rate Limits](https://apis.io/rate-limits/argus-investor/argus-investor-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Argus Investor Finops](https://apis.io/finops/argus-investor/argus-investor-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.argusresearch.com/)
-- [Portal](https://www.argusresearch.com/)
+- [Support](https://www.argusresearch.com/ContactUs.aspx)
+- [Blog](https://www.argusresearch.com/)
+- [Terms of service](https://www.argusresearch.com/terms.aspx)
+- [Privacy policy](https://www.argusresearch.com/privacy.aspx)
 
-## Features
+## API Evangelist rating
 
-| Name | Description |
-|------|-------------|
-| Fundamental Equity Research | In-depth company analysis using a six-point system covering financials, management, competitive position, earnings quality, growth, and valuation. |
-| Buy/Hold/Sell Ratings | Clear investment recommendations with target prices for 500+ publicly traded companies. |
-| Earnings Estimates | Quarterly and annual earnings per share estimates with revision history. |
-| Sector Analysis | Regular sector-level commentary and relative weighting recommendations. |
-| Economic Commentary | Weekly macro-economic analysis covering interest rates, GDP, and market conditions. |
-| Model Portfolios | Curated model portfolios across growth, income, and defensive strategies. |
-| Institutional Independence | No investment banking conflicts — does not underwrite, broker, or manage money. |
-| Market Commentary | Daily and weekly market analysis including Daily Spotlight and analyst quick notes. |
+**Kin Score 12.4** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-## Use Cases
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 27.6 |
 
-| Name | Description |
-|------|-------------|
-| Portfolio Research Integration | Integrate Argus ratings and estimates into portfolio management systems. |
-| Stock Screening | Screen securities by Argus rating, sector, and analyst confidence level. |
-| Earnings Estimate Consensus | Access Argus estimates as an independent data point alongside consensus. |
-| Brokerage Research Distribution | Distribute Argus research reports to brokerage clients via financial platforms. |
-| Compliance Monitoring | Track rating changes and analyst recommendations for investment compliance. |
+**Agent readiness 2.5** — human-only
 
-## Integrations
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-| Name | Description |
-|------|-------------|
-| Bloomberg | Argus research distributed through Bloomberg Terminal for institutional clients. |
-| Fidelity | Argus ratings and reports available on Fidelity research platform. |
-| Charles Schwab | Argus content integrated into Schwab research and planning tools. |
-| Interactive Brokers | Argus research available through Interactive Brokers research portal. |
-| Reuters | Argus analyst commentary and ratings cited in Reuters financial news. |
-| Yahoo Finance | Argus ratings featured in Yahoo Finance analyst rating aggregations. |
+**Regulatory alignment 13.7** — Horizontal (data, software, accessibility, platform)
 
-## Maintainers
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/argus-investor/](https://apis.io/providers/argus-investor/).
 
-**FN:** Kin Lane
+## How this profile is made
 
-**Email:** kin@apievangelist.com
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Argus Investor: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/argus-investor/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
